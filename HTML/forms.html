@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+          <input list="browsers">
+          <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+          </datalist>
+          Select images: <input type="file" name="img" multiple>
+          <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+            </textarea>
+            0
+            <input type="range"  id="a" name="a" value="50">
+             100 +
+             <input type="number" id="b" name="b" value="50">
+             =
+             <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </fieldset>       
+    </form> -->
+    <!-- <form > -->
+        <fieldset>
+            <legend>Registration page</legend>
+            <label for="">Name
+                <div>
+                    <input type="text"  name="name" required>
+                </div>
+                
+            </label>
+            <label for="">Email ID:
+                <div>
+                    <input type="email" name="email" required>
+                </div>
+            </label>
+            <label for="">Mobile No
+                <div>
+                    <input type="tel"  name="tel"maxlength="9">
+                </div>
+            </label>
+            <label for="">Password
+                <div>
+                    <input type="password" name="password">
+                </div>
+            </label>
+            <label >
+                <div class="btn">
+                    <button onclick="registration()">Submit</button>
+                </div>
+            </label>
+        </fieldset>
+    <!-- </form> -->
+    <div id="card">
+        <p>Business card</p>
+        <p id="name"></p>
+        <p id="email"></p>
+        <p id="tel"></p>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
