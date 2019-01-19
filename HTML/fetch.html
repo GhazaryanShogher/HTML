@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+<ul></ul>
+
+</div>
+
+<script>
+
+function loadDoc() {
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+.then(function(response) {
+    console.log(response);
+})
+.catch(function(error) {
+  console.log('Looks like there was a problem: \n', error);
+});
+
+}
+</script>
+
+</body>
+</html>

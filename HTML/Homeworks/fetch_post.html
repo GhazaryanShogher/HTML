@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<input type="text" id = "pname" value="">
+<input type="number" id = "age" value="">
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+<script>
+  //post method
+function loadDoc() {
+var data = {};
+data.name = pname.value;
+data.age  = age.value;
+    fetch('http://rest.learncode.academy/api/learncode/friends', {
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        method: 'POST',
+        body: JSON.stringify({data
+        })
+    })
+}
+</script>
+
+</body>
+</html>
