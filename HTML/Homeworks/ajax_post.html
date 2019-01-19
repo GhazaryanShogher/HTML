@@ -3,17 +3,23 @@
 <body>
 
 <h2>The XMLHttpRequest Object</h2>
+<input type="text" id = "pname">
+<input type="number" id = "age">
 
 <button type="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
 <script>
-data = {
-    "userId": 5,
-    "id": 5,
-    "title": "Shogher",
-    "body": "Ghazaryan"
+// var pName = "";
+// pName += pname.value;
+// var pAge  = age.value;
+var data  = {
+    name: "Karen",
+    age: 20
   }
+  dataForSend = JSON.stringify(data);
+
+  //post method
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -21,9 +27,9 @@ function loadDoc() {
       document.getElementById("demo").innerHTML = this.responseText;
     }
   };
-  xhttp.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
+  xhttp.open("POST", "http://rest.learncode.academy/api/learncode/friends", true);
   xhttp.setRequestHeader("Content-type", "application/json");
-  xhttp.send(data);
+  xhttp.send(dataForSend);
 }
 </script>
 
