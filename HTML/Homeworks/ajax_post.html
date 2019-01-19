@@ -3,24 +3,19 @@
 <body>
 
 <h2>The XMLHttpRequest Object</h2>
-<input type="text" id = "pname">
-<input type="number" id = "age">
+<input type="text" id = "pname" value="">
+<input type="number" id = "age" value="">
 
 <button type="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
 <script>
-// var pName = "";
-// pName += pname.value;
-// var pAge  = age.value;
-var data  = {
-    name: "Karen",
-    age: 20
-  }
-  dataForSend = JSON.stringify(data);
-
   //post method
 function loadDoc() {
+  var data = {};
+data.name = pname.value;
+data.age  = age.value;
+dataForSend = JSON.stringify(data);
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
