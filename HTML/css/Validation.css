@@ -1,0 +1,66 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url('../images/sunrise1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    color: grey;
+    text-align: center;
+    z-index: 99;
+    background-color:white;
+    opacity: 0.9;
+    border-radius: 7px;
+    padding-bottom: 10px;
+  }
+  input{
+    border: 1px solid grey;
+    /* border-bottom: 2px solid red; */
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 2%;
+  }
+  .w3-rest{
+      margin-bottom: 10px;
+  }
+  .btn{
+      outline: none;
+      border: none;
+      height: 30px;
+      width: 120px;
+      border-radius: 5px;
+      margin: 10px 0;
+  }
+  @media only screen and (max-width: 768px){
+      .form{
+          width: 65%;
+      }
+      input{
+          width: 70%;
+      }
+  }
