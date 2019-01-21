@@ -10,29 +10,33 @@
 <body>
     <div id="overlay"></div>
     <div class="form">
-        <form action="/">
         <h1>Registration</h1>
         <div class="w3-rest">
             <input class="w3-input w3-border" id="first" type="text" placeholder="First Name" required>
         </div>
+        <span class="error"></span>
         <div class="w3-rest">
             <input class="w3-input w3-border" id="last" type="text" placeholder="Last Name" required>
         </div>
+        <span class="error"></span>
         <div class="w3-rest">
             <input class="w3-input w3-border" id="emailaddress" type="email" placeholder="Email" required>
         </div>
+        <span class="error"></span>
         <div class="w3-rest">
-            <input class="w3-input w3-border" id="login" type="text" placeholder="Login" required>
+            <input class="w3-input w3-border" id="userId" type="text" placeholder="Login" required>
         </div>
+        <span class="error"></span>
         <div class="w3-rest">
-            <input class="w3-input w3-border" id="password" type="password" placeholder="Password" required>
+            <input class="w3-input w3-border" id="pass" type="password" placeholder="Password" required>
         </div>
+        <span class="error"></span>
         <div class="w3-rest">
             <input class="w3-input w3-border" id="confpassword" type="password" placeholder="Confirm password" required>
         </div>
+        <span class="error"></span>
               
-        <input class="btn" type="submit" value="Registration">
-    </form>              
+        <input class="btn" type="button" value="Registration" onclick="registration()">
     </div>    
 <script src="../js/Validation.js"></script>
 </body>
