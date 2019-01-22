@@ -12,7 +12,20 @@ function registration(){
                     if(mailAddress(mail)){
                         if(passValidation(password)){
                             if(password == password1){
-                                
+                                var data = {};
+                                data.name = name;
+                                data.lastName  = surname;
+                                data.email  = mail;
+                                data.login  = login;
+                                data.password  = password;
+                                data.password1  = password1;
+                                console.log(data)
+                                fetch('http://rest.learncode.academy/api/learncode/friends', {
+                                    headers: { "Content-Type": "application/json; charset=utf-8" },
+                                    method: 'POST',
+                                    body: JSON.stringify({data
+                                    })
+                                })
                                 alert("You have been successfully registered");
 
                             } else{
