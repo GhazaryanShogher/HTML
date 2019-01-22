@@ -10,8 +10,17 @@ function registration(){
             if(checkName(surname)){
                 if(letters(surname)){
                     if(mailAddress(mail)){
-                        
+                        if(passValidation(password)){
+                            if(password == password1){
+                                
+                                alert("You have been successfully registered");
 
+                            } else{
+                                document.getElementsByClassName("error")[5].innerHTML = "!!! The password and confirmation password do not match";
+                            }
+                        } else{
+                            document.getElementsByClassName("error")[4].innerHTML = "!!! Password must be between 6 to 8 digit and contain at least 1 lowercase and 1 uppercase alphabetic characters and 1 number";
+                        } 
                     } else{                        
                         document.getElementsByClassName("error")[2].innerHTML = "!!! Please enter correct email address";
                     }
@@ -50,6 +59,16 @@ function letters(text){
 function mailAddress(text){
     var emailaddres = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(text.match(emailaddres))
+    {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+function passValidation(text){
+    pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,8})/;
+    if(text.match(pass))
     {
         return true;
     } else {
