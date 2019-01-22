@@ -5,20 +5,34 @@ function registration(){
     var login = userId.value;
     var password = pass.value;
     var password1 = confpassword.value;
-    if(checkName(name) && checkName(surname) ){
-        //alert("ok")
-    } 
+    if(checkName(name)){
+        if(letters(name)){
+            if(checkName(surname)){
+                if(letters(surname)){
+                    if(mailAddress(mail)){
+                        
 
-    console.log(last.value)
+                    } else{                        
+                        document.getElementsByClassName("error")[2].innerHTML = "!!! Please enter correct email address";
+                    }
+                } else {            
+                    document.getElementsByClassName("error")[1].innerHTML = "!!! Must have alphabet characters only";
+                }
+            } else {
+                document.getElementsByClassName("error")[1].innerHTML = "!!! Please enter your last name";
+            }            
+        } else {            
+            document.getElementsByClassName("error")[0].innerHTML = "!!! Must have alphabet characters only";
+        }
+    } else {        
+        document.getElementsByClassName("error")[0].innerHTML = "!!! Please enter your first name";
+    }
 }
 
 function checkName(name){
     if(name.length == 0){
-        document.getElementsByClassName("error")[0].innerHTML = "!!! Please enter your first name";
         return false;
-     } else if(letters(name)){
-
-     } else {
+     }  else {
         return true;
     }
 }
@@ -29,8 +43,18 @@ function letters(text){
     {
         return true;
     } else {
-        document.getElementsByClassName("error")[0].innerHTML = "!!! Must have alphabet characters only";
-        text.focus();
-    return false;
+        return false;
     }
 }
+
+function mailAddress(text){
+    var emailaddres = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(text.match(emailaddres))
+    {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
