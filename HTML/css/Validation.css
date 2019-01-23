@@ -17,9 +17,11 @@ body{
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.7;
     transition: .5s ease;
-    background-color: #008CBA;
+    /* background-color: #008CBA; */
+    /* border-image: linear-gradient(to right, #9dabe3, #7fbdf2, #61cff4, #58deea, #71ead7); */
+    background-image: linear-gradient(to right, #929bbc, #7c9ebc, #67a1b6, #5ca2a8, #5fa195);
   }
 
   .form{
@@ -38,8 +40,10 @@ body{
     padding-bottom: 10px;
   }
   input{
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     /* border-bottom: 2px solid red; */
+    /* border-image: linear-gradient(to right, #9dabe3, #7fbdf2, #61cff4, #58deea, #71ead7);  */
+    border-image: linear-gradient(#1e2d61 0%,#1f386e 19%,#203c72 20%,#203c73 20%,#266aa8 69%,#2775b5 84%,#2878b9 84%,#2879ba 85%,#297fc0 95%,#2d75ad 100%);
     width: 60%;
     height: 40px;
     border-radius: 20px;
