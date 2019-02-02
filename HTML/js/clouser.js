@@ -7,4 +7,3 @@ function addCount() {
   }
   let incr =  addCount();
   console.log(incr());
-  
