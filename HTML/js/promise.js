@@ -3,11 +3,10 @@ fetch("https://jsonplaceholder.typicode.com/todos")
     .then(data=>{
     for(let i=0; i<5; i++){
         console.log(data[i])
-        for(key in data[i]){
         let lis = document.createElement('li');
-        var text= document.createTextNode(JSON.stringify(data[i]));
+        for(key in data[i]){
+            lis.innerHTML += data[i][key];
         obj.appendChild(lis);
-        lis.appendChild(text);  
         }        
     }
 })
