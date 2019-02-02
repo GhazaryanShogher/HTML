@@ -17,7 +17,7 @@ function addToDoItem() {
     
 }
   let arrToDo =  addToDoItem();
-  console.log(arrToDo())
+  //console.log(arrToDo())
   
 // function add(){
 //     let inp = todo.value;
@@ -31,4 +31,11 @@ function addToDoItem() {
 //     console.log("list", list)
 // }
 // console.log(list);
-
+function createItem(){
+    var container = document.createElement('div');
+    var sp = document.createElement('span');
+    var text = document.createTextNode(todo.value);
+    sp.appendChild(text) ;
+    container.appendChild(sp);
+    main.appendChild(container);
+}
