@@ -1,41 +1,24 @@
-
-//  let list = ["ajjaj"];
-//  list.unshift("kdshcfif");
+let list = [];
 function addToDoItem() {
-    let list = ["ajjaj"];
-    let inp = todo.value;
-    if(inp.length == 0){
+    if(todo.value == ''){
         alert("Please fill the input");
-    } else{
-        function unshift(){
-            list.unshift(inp);
-            console.log(list);
-            return list;
-        }        
     } 
-    
-    
-}
-  let arrToDo =  addToDoItem();
-  //console.log(arrToDo())
-  
-// function add(){
-//     let inp = todo.value;
-//     if(inp.length == 0){
-//         alert("Please fill the input");
-//     } else{ 
-//         list.unshift(inp);
-//         console.log(list)
-//         return list;
-//     }
-//     console.log("list", list)
-// }
-// console.log(list);
-function createItem(){
+    list.unshift(todo.value);
+    todo.value = '';    
+    main.innerHTML = '';  
+    createItem();   
+} 
+console.log('list',list);
+
+function createItem(){ 
+    for(let i = 0; i < list.length; i++) {         
     var container = document.createElement('div');
-    var sp = document.createElement('span');
-    var text = document.createTextNode(todo.value);
-    sp.appendChild(text) ;
-    container.appendChild(sp);
-    main.appendChild(container);
+    container.innerHTML = '';
+        container.className = ('main')
+        var sp = document.createElement('span');
+        var text = document.createTextNode(list[i]);
+        sp.appendChild(text) ;
+        container.appendChild(sp);
+        main.appendChild(container);
+    }
 }
