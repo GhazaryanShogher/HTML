@@ -8,8 +8,6 @@ html,body{
     width: 60%;
     padding: 5px;    
     display: flex;
-    justify-content: center;
-    text-align: center;
 }
 #main{    
     margin:  0 auto;
@@ -17,4 +15,10 @@ html,body{
 }
 .green-color{
     color: green;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    flex: 4;
+    text-align: center;
 }

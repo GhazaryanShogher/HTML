@@ -21,6 +21,7 @@ function createItem(){
     container.innerHTML = '';
         container.className = ('main')
         var sp = document.createElement('div');
+        sp.className = ('text')
         var text = document.createTextNode(list[i]);
         sp.appendChild(text) ;
         container.appendChild(i1);
