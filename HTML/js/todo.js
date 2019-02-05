@@ -50,4 +50,10 @@ function changeColor(){
 //deleteing from todo list
 function del(){
     this.parentNode.remove(this.parentNode);
+    let text = this.previousSibling.innerHTML;
+    for(let i =0; i<list.length; i++){
+        if(list[i] == text){
+            list.splice(i,1);
+        }
+    }
 }

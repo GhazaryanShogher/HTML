@@ -19,6 +19,5 @@ html,body{
 }
 .text{
     display: flex;
-    justify-content: center;
-    flex: 4;
+    flex: 12;
 }
