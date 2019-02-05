@@ -16,6 +16,7 @@ function createItem(){
         var container = document.createElement('div');
         var i1 = document.createElement('i');
         i1.className = ("far fa-check-square fa-2x green-color");
+        i1.style.flex = 1;
         i1.addEventListener("click", changeColor);
         var i2 = document.createElement('i');
         i2.className = ("far fa-trash-alt f2ed fa-2x");    
@@ -23,7 +24,7 @@ function createItem(){
         container.innerHTML = '';
         container.className = ('main')
         var sp = document.createElement('div');
-        sp.className = ('text ')
+        sp.className = ('text green-color')
         var text = document.createTextNode(list[i]);
         sp.appendChild(text) ;
         container.appendChild(i1);
