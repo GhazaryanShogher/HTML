@@ -3,6 +3,7 @@ let list = [];
 function addToDoItem() {
     if(todo.value == ''){
         alert("Please fill the input");
+        return;
     } 
     list.unshift(todo.value);
     todo.value = '';    
@@ -12,17 +13,18 @@ function addToDoItem() {
 //creating todo div
 function createItem(){ 
     for(let i = 0; i < list.length; i++) {         
-    var container = document.createElement('div');
-    var i1 = document.createElement('i');
-    i1.className = ("far fa-check-square fa-2x green-color");
-    i1.addEventListener("click", changeColor);
-    var i2 = document.createElement('i');
-    i2.className = ("far fa-trash-alt f2ed fa-2x");    
-    i2.addEventListener("click", del);
-    container.innerHTML = '';
+        var container = document.createElement('div');
+        var i1 = document.createElement('i');
+        i1.className = ("far fa-check-square fa-2x green-color");
+        i1.style.flex = 1;
+        i1.addEventListener("click", changeColor);
+        var i2 = document.createElement('i');
+        i2.className = ("far fa-trash-alt f2ed fa-2x");    
+        i2.addEventListener("click", del);
+        container.innerHTML = '';
         container.className = ('main')
         var sp = document.createElement('div');
-        sp.className = ('text')
+        sp.className = ('text green-color')
         var text = document.createTextNode(list[i]);
         sp.appendChild(text) ;
         container.appendChild(i1);

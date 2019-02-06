@@ -11,13 +11,19 @@ html,body{
 }
 #main{    
     margin:  0 auto;
-    width: 80%;
 }
 .green-color{
     color: green;
-    flex: 1;
 }
 .text{
     display: flex;
     flex: 12;
+}
+input {
+    padding: 8px 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    background: white;
+    margin-top: 10px;
 }
