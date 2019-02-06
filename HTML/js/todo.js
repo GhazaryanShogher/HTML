@@ -15,9 +15,9 @@ function createItem(){
     for(let i = 0; i < list.length; i++) {         
         var container = document.createElement('div');
         var i1 = document.createElement('i');
-        i1.className = ("far fa-check-square fa-2x green-color");
+        i1.className = ("far fa-check-square fa-2x green-color active");
         i1.style.flex = 1;
-        i1.addEventListener("click", changeColor);
+        i1.addEventListener("click", completedItem);
         var i2 = document.createElement('i');
         i2.className = ("far fa-trash-alt f2ed fa-2x");    
         i2.addEventListener("click", del);
@@ -34,17 +34,20 @@ function createItem(){
     }
 }
 //will change the color of chacked item after clicking on it
+//bincoler = true means that list is active
 let binColor = true;
-function changeColor(){
+function completedItem(){
     if(binColor){
         this.style.color = "red";        
         this.nextSibling.style.color = "red";
+        this.nextSibling.className.replace("active","complated");
         this.nextSibling.style.textDecoration = "line-through";
         binColor = false;
         return;
     } else {
         this.style.color = "green";
         this.nextSibling.style.color = "green";
+        this.nextSibling.className.replace("complated","active");
         this.nextSibling.style.textDecoration = "none";
         binColor = true;
     }  
@@ -58,4 +61,16 @@ function del(){
             list.splice(i,1);
         }
     }
+}
+function completed(){
+    let divs = document.getElementsByClassName(main);
+    for(let i = 0; i<divs.length; i++){
+        if(divs[i].classList.contains('complated')){
+            divs[i].style.display = "block"
+        } else {
+            divs[i].style.display = "none"
+        }
+
+    }
+    
 }
