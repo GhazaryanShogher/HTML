@@ -14,6 +14,11 @@ html,body{
 }
 .green-color{
     color: green;
+    text-decoration: none;
+}
+.red-color{
+    color:red;
+    text-decoration: line-through;
 }
 .text{
     display: flex;
