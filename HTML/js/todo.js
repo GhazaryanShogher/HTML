@@ -53,6 +53,9 @@ function completed(){
         if(divs[i].classList.contains('green-color')){
             divs[i].parentNode.style.display = "none"
         } 
+        else if(divs[i].classList.contains('red-color')){
+            divs[i].parentNode.style.display = "flex"
+        } 
     }    
 }
 // show active list
@@ -61,6 +64,9 @@ function active(){
     for(let i = 0; i<divs.length; i++){
         if(divs[i].classList.contains('red-color')){
             divs[i].parentNode.style.display = "none"
+        } 
+        else if(divs[i].classList.contains('green-color')){
+            divs[i].parentNode.style.display = "flex"
         } 
     }    
 }
