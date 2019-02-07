@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery</title>
+    <style> 
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }            
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+            </style>
 </head>
 <body>
-    <script></script>
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!</div>
+    <script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        });
+    });
+    </script>
     
 </body>
 </html>
