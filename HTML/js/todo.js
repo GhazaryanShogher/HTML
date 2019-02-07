@@ -74,11 +74,6 @@ function active(){
 function showAll(){
     let divs = document.getElementsByTagName('i');
     for(let i = 0; i<divs.length; i++){
-        if(divs[i].classList.contains('red-color')){
-            divs[i].parentNode.style.display = "flex"
-        } 
-        else if(divs[i].classList.contains('green-color')){
-            divs[i].parentNode.style.display = "flex"
-        } 
+        divs[i].parentNode.style.display = "flex"
     }    
 }
