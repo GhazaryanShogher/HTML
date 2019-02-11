@@ -25,6 +25,7 @@ html,body{
     width: 158px;
     display: inline-block;
     flex: 2;
+    margin-top: -15px;
 }
 .menu li{ 
     list-style-type: none;
