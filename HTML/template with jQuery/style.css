@@ -47,3 +47,6 @@ nav{
 nav i {
     color: #37ca8a;
 }
+nav div{
+    padding-right: 15px;
+}
