@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #showErr{
+            padding: 7px;
+            color: red;
+        }    
+    </style>
+</head>
+<body>
+    <input type="text" id="demo">
+    <input type="button" value="chack" onclick="tryCatch()">
+    <div id="showErr"></div>
+    <script>
+function tryCatch(){
+    var demo = document.getElementById("demo").value;
+    try{
+        if(demo.length == 0) throw "Please insert some number";
+        demo = Number(demo);
+        if(typeof demo === 'number' && demo > 10) throw "more than 10";
+        if(typeof demo === 'number' && demo < 10) throw "less than 10";
+        else{
+           document.write("hello")
+        }
+    }
+    catch(e){
+        showErr.innerHTML = "Error: " + e;
+    }
+    finally{
+        tex.value = "";
+    }
+}
+    
+    </script>
+</body>
+</html>
