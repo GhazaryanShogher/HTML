@@ -50,3 +50,7 @@ nav i {
 nav div{
     padding-right: 15px;
 }
+.active{
+    display: inline-block;
+    background-image: url('images/slide_1.tif');
+}
