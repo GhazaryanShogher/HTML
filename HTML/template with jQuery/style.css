@@ -23,8 +23,8 @@ html,body{
     background-image: url("images/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40px;
-    width: 158px;
+    height: 70px;
+    width: 285px;
     display: inline-block;
     flex: 2;
     margin-top: -15px;
