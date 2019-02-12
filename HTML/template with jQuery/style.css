@@ -53,7 +53,7 @@ nav div{
     background-size: cover;
     width: 1349px;
     height: 478px;
-    background-image: url("images/slide_1.tif");
+    background-image: url("images/slide-1.jpg");
 }
 .second{
     background-size: cover;
@@ -61,7 +61,7 @@ nav div{
     width: 1349px;
     height: 478px;
     display: inline-block;
-    background-image: url("images/slide_2.tif");
+    background-image: url("images/slide-2.kpg");
 }
 .active{
     display: inline-block;
