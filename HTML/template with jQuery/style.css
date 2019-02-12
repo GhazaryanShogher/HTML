@@ -4,8 +4,7 @@
 }
 html,body{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 .first{
     display: flex;
@@ -50,7 +49,52 @@ nav i {
 nav div{
     padding-right: 15px;
 }
+.firsts{
+    background-size: cover;
+    width: 1349px;
+    height: 478px;
+    background-image: url("images/slide_1.tif");
+}
+.second{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1349px;
+    height: 478px;
+    display: inline-block;
+    background-image: url("images/slide_2.tif");
+}
 .active{
     display: inline-block;
-    background-image: url('images/slide_1.tif');
+}
+.slider{
+    width: 1400px;
+    height: 500px;
+}
+.next, .prev{
+    position: absolute;
+    transform: rotate(45deg);
+    border: 1px  solid gray;
+    width: 40px;
+    height: 40px;
+}
+.next:hover, .prev:hover{
+    background: #37ca8a;
+}
+.next{
+    right: 130px;
+    position: absolute;
+    top: 300px;
+}
+.next i, .prev i{
+    transform: rotate(-45deg); 
+    padding: 11px; 
+}
+.prev{
+    left: 130px;
+    position: absolute;
+    top: 300px;
+}
+.prev i{
+    transform: rotate(-45deg); 
+    padding: 11px; 
 }
