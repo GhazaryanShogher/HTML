@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    alert("hi");
     $('.next').on('click', function(){
         var first = $('.active');
         var second = first.next();
