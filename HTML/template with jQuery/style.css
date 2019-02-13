@@ -49,20 +49,9 @@ nav i {
 nav div{
     padding-right: 15px;
 }
-.firsts{
-    background-size: cover;
-    width: 1349px;
-    height: 478px;
-    background-image: url("images/slide_1.tif");
+.firsts, .second{
 }
-.second{
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 1349px;
-    height: 478px;
-    display: inline-block;
-    background-image: url("images/slide_2.tif");
-}
+
 .active{
     display: inline-block;
 }
