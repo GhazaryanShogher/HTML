@@ -91,3 +91,6 @@ nav div{
     transform: rotate(-45deg); 
     padding: 11px; 
 }
+h2:hover, .green:hover{
+    color: #37ca8a;
+}
