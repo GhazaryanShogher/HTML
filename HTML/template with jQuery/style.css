@@ -5,6 +5,7 @@
 html,body{
     width: 100%;
     box-sizing: border-box;
+    font-size: 16px;
 }
 .first{
     display: flex;
@@ -91,6 +92,37 @@ nav div{
     transform: rotate(-45deg); 
     padding: 11px; 
 }
-h2:hover, .green:hover{
+h1:hover, .green:hover{
     color: #37ca8a;
+}
+.middle{
+    display: flex;
+}
+.green{
+    padding: 15px 0;
+    margin-bottom:15px; 
+}
+.icon{
+    text-align:center;
+    line-height: 1.5em;
+    color: #000;
+    padding: 2%;
+    border: 1px solid  #e5e7e9;
+    background-color: #fff;
+    flex: 1;
+}
+h1{
+    margin: 15px 0;
+    font-weight: 700;
+}
+.big{
+    font-size: 2em;
+    margin-top: 1em;
+}
+.clip{
+    width: 85%;
+    height: 200px;
+    background-color: #37ca8a;
+    -webkit-clip-path: polygon(49% 10%, 52% 0, 100% 0, 100% 100%, 0 99%, 0 0, 45% 0);
+    clip-path: polygon(49% 10%, 52% 0, 100% 0, 100% 100%, 0 99%, 0 0, 45% 0);
 }
