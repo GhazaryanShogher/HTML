@@ -12,6 +12,9 @@ html,body{
     text-align: center;
     justify-content: center;
 }
+.main{
+    width: 100%;
+}
 .menu{
     display: inline-block;
     flex: 13;
@@ -20,8 +23,8 @@ html,body{
     background-image: url("images/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40px;
-    width: 158px;
+    height: 70px;
+    width: 285px;
     display: inline-block;
     flex: 2;
     margin-top: -15px;
@@ -50,14 +53,14 @@ nav div{
     padding-right: 15px;
 }
 .firsts, .second{
+    width: 100%;
+    height: 478px;
 }
-
+.slides img{
+    display:none;
+}
 .active{
-    display: inline-block;
-}
-.slider{
-    width: 1400px;
-    height: 500px;
+    display: block!important;
 }
 .next, .prev{
     position: absolute;
@@ -72,7 +75,7 @@ nav div{
 .next{
     right: 130px;
     position: absolute;
-    top: 300px;
+    top: 350px;
 }
 .next i, .prev i{
     transform: rotate(-45deg); 
@@ -81,7 +84,7 @@ nav div{
 .prev{
     left: 130px;
     position: absolute;
-    top: 300px;
+    top: 350px;
 }
 .prev i{
     transform: rotate(-45deg); 

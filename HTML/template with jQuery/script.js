@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    alert("hi");
     $('.next').on('click', function(){
         var first = $('.active');
         var second = first.next();
@@ -16,5 +17,5 @@ $(document).ready(function(){
             first.removeClass('active');
             second.addClass('active');
         }
-    })
+    });
 });
