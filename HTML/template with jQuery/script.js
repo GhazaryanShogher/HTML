@@ -17,7 +17,7 @@ $(document).ready(function(){
             second.addClass('active');
         }
     }); 
-    $('window').on('scroll', function(){
-console.log("$('window').scrollTop()")
+    $(window).on('scroll', function(){
+console.log($(window).scrollTop())
     });
 })
