@@ -16,5 +16,8 @@ $(document).ready(function(){
             first.removeClass('active');
             second.addClass('active');
         }
+    }); 
+    $('window').on('scroll', function(){
+console.log("$('window').scrollTop()")
     });
-});
+})

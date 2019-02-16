@@ -78,7 +78,7 @@ nav div{
     position: absolute;
     top: 350px;
 }
-.next i, .prev i{
+.next i, .prev i{  
     transform: rotate(-45deg); 
     padding: 11px;
     color: white;
