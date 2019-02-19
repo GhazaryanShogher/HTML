@@ -19,7 +19,7 @@ function Create(tag,color,text,background){
 //call
  function creator(){debugger
     let tag1 = content.value;
-    let color1 = color.value;
+    let color1 = color.value; 
     let text1 = text.value;
     let background1 = fon.value;
     var elemen = new Create(tag1,color1,text1,background1);
@@ -30,7 +30,7 @@ function Create(tag,color,text,background){
  
 // function result(tag1,color1,text1,background1){
 //     var elem = document.createElement(tag1);
-//     elem.style.color = color1;
+//        elem.style.color = color1;
 //     elem.innerHTML = text1;
 //     elem.style.background = background1;
 //     elem.className = 'sizes';
