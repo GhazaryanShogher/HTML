@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .sizes{
+            width: 100px;
+            height: 40px;;
+        }
+    </style>
 </head>
 <body>
-    <div id='inputs'>
-        Tag <input type='text'>
-        Color <input type='text'>
-        Text <input type='text'>
-        Background <input type='text'>
-        <button>Create</button>
+    <div>
+        Tag <input type='text' id ="content"><br><br>
+        Color <input type='text' id="color"><br><br>
+        Text <input type='text' id="text"><br><br>
+        Background <input type='text' id="fon"><br><br>
+        <button onclick="creator()">Create</button>
     </div>
+    <div id="container"></div>
     
-    <script src ='js/input_construct.js'></script>
+    <script src ='../js/input_construct.js'></script>
 </body>
 </html>
