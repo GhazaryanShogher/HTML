@@ -1,4 +1,4 @@
-//constructor
+//creating element with class
 class Element {
     constructor(tag,color,text,background){
         this.tag = tag;
