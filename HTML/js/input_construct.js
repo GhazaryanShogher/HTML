@@ -52,4 +52,3 @@ class Element {
 //     elem.className = 'sizes';
 //     container.appendChild(elem);
 // }
-
