@@ -1,20 +1,20 @@
 //creating element with class
 class Element {
-    constructor(tag,color,text,background){
+    constructor(tag,color,text,background,className){
         this.tag = tag;
         this.color = color;
         this.text = text;
         this.background = background;
+        this.className = className;
     }
     elemCreate(){
         var elem = document.createElement(this.tag);
         elem.style.color = this.color;
         elem.innerHTML = this.text;
         elem.style.background = this.background;
-        elem.className = 'sizes';
+        elem.className = this.className;
         container.appendChild(elem);
     }
-
 }
 //call
 function creator(){
@@ -22,7 +22,8 @@ function creator(){
     let color1 = color.value; 
     let text1 = text.value;
     let background1 = fon.value;
-    var elemen = new Element(tag1,color1,text1,background1);
+    let className1 = 'sizes';
+    var elemen = new Element(tag1,color1,text1,background1,className1);
     elemen.elemCreate();
  }
 // function Create(tag,color,text,background){
